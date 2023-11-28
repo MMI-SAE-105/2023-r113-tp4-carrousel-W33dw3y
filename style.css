@@ -1,16 +1,11 @@
-/* en vrac :
-100% 100% 100% 0 auto border-box box-sizing 
-display height flex flex none margin 
-max-width width width
-*/ 
-* {
+ * {
     /* change le box model */
     box-sizing: border-box;
 }
 
 img {
       /* image responsive, largeur maxi */
-      width: 100%;
+      max-width: 100vw;
       /* hauteur "auto" */
       height: auto;
 }
@@ -19,13 +14,15 @@ img {
       /* aligne horizontalement les enfants */
       display: flex;
       /* largeur du parent */   
-      width: 100vw;
+      width: 100%;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
 }
 
 .carrousel_ecran {
       /* largeur du parent pour chaque enfant */
-      width: 100%;
       /* permet de garder toute la largeur du parent */
+      width: 100%;
 }
 
 .carrousel_ecran figure {
