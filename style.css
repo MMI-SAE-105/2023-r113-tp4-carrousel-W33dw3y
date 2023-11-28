@@ -17,12 +17,15 @@ img {
       width: 100%;
       overflow-x: scroll;
       scroll-behavior: smooth;
+      /*permet de scroller par bloc*/
+      scroll-snap-type: x mandatory;
 }
 
 .carrousel_ecran {
       /* largeur du parent pour chaque enfant */
       /* permet de garder toute la largeur du parent */
       width: 100%;
+      scroll-snap-align: start;
 }
 
 .carrousel_ecran figure {
