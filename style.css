@@ -77,6 +77,20 @@ img {
       gap: 1rem;
 }
 
-.actif {
-      color: red;
+.caroussel_lien{
+      text-decoration: none;
+      background-color: rgb(78, 41, 121);
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      color: white;
+      font-family: 'Roboto', sans-serif;
 }
+
+.caroussel_lien:hover{
+      background-color: rgb(202, 183, 96);
+      transition: 1s;
+}
+.actif {
+      background-color: rgb(202, 183, 96);
+}
+
