@@ -14,19 +14,23 @@ img {
       /* aligne horizontalement les enfants */
       display: flex;
       /* largeur du parent */   
-      width: 100%;
+
       overflow-x: scroll;
       scroll-behavior: smooth;
       /*permet de scroller par bloc*/
       scroll-snap-type: x mandatory;
+      width: 520px;
+      margin-bottom: 20px;
 }
 
 .carrousel_ecran {
       /* largeur du parent pour chaque enfant */
       /* permet de garder toute la largeur du parent */
       flex: none;
-      width: 100%;
       scroll-snap-align: start;
+      border: 10px solid rgb(78, 41, 121);
+      border-radius: 10px;
+      margin: 10px 0;
 }
 
 .carrousel_ecran figure {
@@ -34,8 +38,15 @@ img {
       margin: 0;
 }
 
+body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
 .carrousel {
-      position: relative;
+      position: flex;
+      justify-content: center;
 }
 
 /*BOUTONS*/
@@ -94,3 +105,11 @@ img {
       background-color: rgb(202, 183, 96);
 }
 
+figcaption {
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+      font-family: 'Roboto', sans-serif;
+}
