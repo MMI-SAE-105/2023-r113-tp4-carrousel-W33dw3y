@@ -10,7 +10,7 @@
 <body>
     <h1>Test carrousel</h1>
     
-    <div class="carrousel" x-data="{}">
+    <div class="carrousel" x-data="{hrefCourant: '#ecran-1'},">
         <button 
         @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"
         class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt</button>
