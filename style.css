@@ -19,7 +19,7 @@ img {
       scroll-behavior: smooth;
       /*permet de scroller par bloc*/
       scroll-snap-type: x mandatory;
-      width: 520px;
+      width: 75.5vw;
       margin-bottom: 20px;
 }
 
@@ -97,10 +97,6 @@ body {
       font-family: 'Roboto', sans-serif;
 }
 
-.caroussel_lien:hover{
-      background-color: rgb(202, 183, 96);
-      transition: 1s;
-}
 .actif {
       background-color: rgb(202, 183, 96);
 }
