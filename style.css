@@ -15,7 +15,7 @@ img {
       display: flex;
       /* largeur du parent */   
       width: 100%;
-      max-width: 600px;
+      max-width: 500px;
       height: auto;
       overflow-x: scroll;
       scroll-behavior: smooth;
@@ -49,14 +49,14 @@ body {
 }
 
 .carrousel {
-      position: flex;
-      justify-content: center;
+      position: relative;
+
 }
 
 /*BOUTONS*/
 .carrousel_btn {
       position: absolute;
-      top: calc(100vw / 16 * 9 / 2 + 1rem); /* centre verticalement ~50% vertical */
+      top: calc(50% - 1rem); /* centre verticalement ~50% vertical */
       transform: translateY(-50%); /* methode du point mort */
       width: 2rem;
       height: 2rem;
@@ -69,11 +69,11 @@ body {
 }
     
 .carrousel_btn-avant {
-      left: 0;
+      left: 1rem;
 }
     
 .carrousel_btn-apres {
-      right: 0;
+      right: 1rem;
 }
 
 /*BOUTONS*/
@@ -91,6 +91,7 @@ body {
     /* espace entre les enfants */
       gap: 1rem;
       flex-wrap: wrap;
+      max-width: 500px;
 }
 
 .caroussel_lien{
