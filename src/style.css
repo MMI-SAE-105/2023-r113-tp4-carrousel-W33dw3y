@@ -3,10 +3,33 @@
 
 
 * {
-    /* change le box model */
-    box-sizing: border-box;
+      box-sizing: border-box;
 }
 
+body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: 
+      linear-gradient(217deg,rgba(217, 197, 45, 0.8),rgba(255, 0, 0, 0) 70.71%), 
+      linear-gradient(127deg, rgb(199, 154, 199), rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(336deg, rgba(0, 213, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);  
+}
+
+h1 {
+      font-family: 'Dhurjati', sans-serif;
+      font-size: 50px;
+      margin: 0;
+}
+
+figcaption {
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+}
+
+
+/*CAROUSSEL*/
 .carrousel_parent-ecrans {
       /* aligne horizontalement les enfants */
       display: flex;
@@ -44,18 +67,12 @@
       height: auto;
 }
 
-body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-}
-
 .carrousel {
       position: relative;
-
 }
 
-/*BOUTONS*/
+
+/*BOUTONS SUIVANT/PRECEDENT*/
 .carrousel_btn {
       position: absolute;
       top: calc(50% - 1rem); /* centre verticalement ~50% vertical */
@@ -78,7 +95,7 @@ body {
       right: 1rem;
 }
 
-/*BOUTONS*/
+/*BOUTONS ECRAN*/
 .caroussel_liste-liens {
 /* aligne horizontalement les enfants */
       display: flex;
@@ -113,25 +130,7 @@ body {
       padding: 0.6rem 1.1rem;
       transition: 0.5s;
 }
-.actif {    
+
+.actif {
       padding: 0.6rem 1.1rem;
-}
-
-figcaption {
-      text-align: center;
-      font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-      font-family: 'Dhurjati', sans-serif;
-      font-size: 50px;
-      margin: 0;
-}
-
-body {
-      background: 
-      linear-gradient(217deg,rgba(217, 197, 45, 0.8),rgba(255, 0, 0, 0) 70.71%), 
-      linear-gradient(127deg, rgb(199, 154, 199), rgba(0, 255, 0, 0) 70.71%),
-      linear-gradient(336deg, rgba(0, 213, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);     
-      height: 100vh;
 }
