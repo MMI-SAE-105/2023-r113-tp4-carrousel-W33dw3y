@@ -1,13 +1,10 @@
+/*Police de caractere*/
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Inter:wght@300;500;600&display=swap');
+
+
 * {
     /* change le box model */
     box-sizing: border-box;
-}
-
-img {
-      /* image responsive, largeur maxi */
-      width: 100%;
-      /* hauteur "auto" */
-      height: auto;
 }
 
 .carrousel_parent-ecrans {
@@ -30,15 +27,20 @@ img {
       width: 100%;
       flex: none;
       scroll-snap-align: start;
-      border: 10px solid rgb(78, 41, 121);
-      border-radius: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
       margin: 10px 0;
+}
+
+.carrousel_ecran-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
 }
 
 .carrousel_ecran figure {
       /* enlève les marges par défaut */
       margin: 0;
-
       height: auto;
 }
 
@@ -91,24 +93,28 @@ body {
     /* espace entre les enfants */
       gap: 1rem;
       flex-wrap: wrap;
-      max-width: 500px;
+      max-width: 550px;
 }
 
 .caroussel_lien{
       text-decoration: none;
-      background-color: rgb(78, 41, 121);
-      border-radius: 5px;
-      padding: 0.5rem 1rem;
-      color: white;
+      border: 1px solid black;
+      border-radius: 3px;
+      padding: 7px 12px;
+      color: black;
       font-family: 'Roboto', sans-serif;
 }
 
-.caroussel_lien:hover {
-      background-color: rgb(202, 183, 96);
-      transition: 1s;
+.caroussel_liste-liens > li {
+      margin-bottom: 10px;
 }
-.actif {
-      background-color: rgb(202, 183, 96);
+
+.caroussel_lien:hover {
+      padding: 0.6rem 1.1rem;
+      transition: 0.5s;
+}
+.actif {    
+      padding: 0.6rem 1.1rem;
 }
 
 figcaption {
@@ -117,5 +123,15 @@ figcaption {
 }
 
 h1 {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Dhurjati', sans-serif;
+      font-size: 50px;
+      margin: 0;
+}
+
+body {
+      background: 
+      linear-gradient(217deg,rgba(217, 197, 45, 0.8),rgba(255, 0, 0, 0) 70.71%), 
+      linear-gradient(127deg, rgb(199, 154, 199), rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(336deg, rgba(0, 213, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);     
+      height: 100vh;
 }
